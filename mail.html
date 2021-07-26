@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mail</title>
+	<link rel="shortcut icon" href="gmail.ico" type="image/x-icon">
+	<link rel="stylesheet" href="list.css">
+	<link rel="stylesheet" href="webfonts/all.css">
+	<script src="mail.js"></script>
+	
+</head>
+	
+<body>
+  <div class="list">
+	inbox mail
+	</div>
+	 <div class="minfo">
+		<span id="demails">Deleted Mails : 0 </span> 
+		
+	</div>
+	
+	<div class="container">
+		<nav>
+	 <ul>
+		 <li><span onclick="showinbox()" style="cursor: pointer;">Inbox</span></li>
+		<li><span onclick="showsent()" style="cursor: pointer;">Sent</span></li>
+		
+		 
+			</ul> </nav>
+	</div>
+	
+	<div id="peoples">
+	<div id="fp">
+	  <i class="far fa-check-circle" id="fpo" onClick="hidelp()"></i>  <i class="fas fa-trash-alt" id="fpd" onClick="deleteo()"></i> <span id="staro"> <i class="far fa-star" onClick="starn()"></i> </span>  <span id="fpn">Lisa Palik</span>  <span id="fpm">Hi Julia! Thank you for collaborating with us...</span> 
+		<div id="fpfd">
+		     <span>From : </span> <span id="fpnfd">Lisa Palik</span> <br>
+			 <span>Message : <span id="fpmfd">Hi Julia! Thank you for collaborating with us. we would love to collaborate with your team in future. <br> Thank You! 😊</span></span> <i class="fas fa-window-close" id="fpfdc" onClick="showhelp()"></i>
+		</div>
+	</div>
+	
+	
+	
+	<div id="sp">
+	  <i class="far fa-check-circle" id="spo" onClick="showfp()"></i>  <i class="fas fa-trash-alt" id="spd" onClick="de()"></i> <span id="stars"> <i class="far fa-star" onClick="stars()"></i> </span> <span id="spn">Elen Casrola</span>  <span id="spm">Hi Julia! We would love to tell you that...</span> 
+		<div id="spfd">
+		     <span>From : </span> <span id="spnfd">Elen Casrola</span> <br>
+			 <span>Message : <span id="spmfd">Hi Julia! We would love to tell you that we are starting our own business, so would you love to be a partner of us. <br>
+				Contact me : 12345667890 <br>
+				Discord : Elen#0000<br> Thank You! 😊</span></span> <i class="fas fa-window-close" id="spfdc" onClick="hidesp()"></i>
+		</div>
+	</div>
+	<div id="sent">
+	     <i class="fas fa-pen" onClick="showmail()"></i>
+	</div>
+	<div id="form">
+		<form id="for_m" name="forma">
+		<h3>Draft</h3>
+	<span id="name">From : you.google@gmail.com</span> <br> <br>
+	<span id="sender">To : <input type="email" id="rcv" autofocus placeholder="Enter the reciever mail id" required></span> <br> <br>
+	<span id="subject">Subject : <input type="text" id="sj" placeholder="Enter the subject" required></span> <br> <br>
+	<span id="message">Message : <textarea name="tmessage" id="tmsg" cols="30" rows="10" required placeholder="Type your conversation here..."></textarea></span>
+	  <a href="#" id="button" onclick="formsub()">Send</a>
+		</form>
+	</div>
+	</div>
+	<div id="sents">
+	  <h1>Sent Mails</h1> <br> <br> <br> 
+		
+		<span id="recv">Receiever Name : </span> <br> <br><br><br>
+		<span id="sub">Subject : </span> <br> <br><br><br><br><br> 
+		<span id="msg">Message : </span> <br> <br><br><br><br>
+		
+	</div>
+</body>
+</html>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- <i class="far fa-check-circle"></i> this is a chechkbox which isn't ticked -->
+<!-- <i class="fas fa-trash-alt"></i>    this is the trash icon -->
+<!-- <i class="far fa-star"></i>         this is the star icon which is not colored -->
+<!-- <i class="fas fa-star"></i> 		 this is the star icon which is colored -->
+<!-- <i class="fas fa-pen"></i>          this is the pen icon --> 
+
